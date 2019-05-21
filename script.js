@@ -95,7 +95,7 @@ function function1(){
   return 'Hello World';
 }
 
-function2()
+// function2()
 function function2(exercice){
   console.log('exercice')
   return exercice;
