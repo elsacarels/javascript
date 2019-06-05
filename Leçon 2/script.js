@@ -9,7 +9,7 @@ if (condition) {
 */
 
 
-/*
+
 let myVar = 20/2;
 if (myVar >= 10 || myVar < 15){
 console.log('Vrai');
@@ -142,7 +142,7 @@ console.log ('The circumference is ', result);
 let g = ciraire(3.5);
 let h = ciraire(17);
 let i = ciraire(5);
-*/
+
 
 'use strict';
 
