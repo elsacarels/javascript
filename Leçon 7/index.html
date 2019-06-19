@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>DOM | Events</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/css/flag-icon.min.css">
+  <style media="screen">
+    .flags {
+  margin-top: 50px;
+  display: flex;
+}
+
+.flag {
+  margin-right: 30px;
+  width: 100px;
+  height: 78px;
+  background-size: contain;
+}
+
+#js-iso-greeting {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.window-info {
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+canvas {
+  background-color: black;
+}
+  </style>
+</head>
+<body>
+  <p id="my-paragraph">Hello World</p>
+  <button class="btn btn-primary" id="js-click">Click me!</button>
+
+  <button class="btn btn-secondary" id="js-change-color">I will change my color</button>
+
+  <button class="btn btn-primary mt-5" id="js-show-alert">Show alert</button>
+<div class="alert alert-primary mt-5" style="display: none;" id="js-alert">
+  Hide me!
+  <button id="js-hide-alert">✕</button>
+</div>
+
+<div class="flags">
+  <div class="flag flag-icon flag-icon-fr" id="js-flag-fr"></div>
+  <div class="flag flag-icon flag-icon-es" id="js-flag-es"></div>
+  <div class="flag flag-icon flag-icon-de" id="js-flag-de"></div>
+</div>
+<div id="js-iso-greeting"></div>
+
+<div class="window-info">
+  <span id="js-window-width"></span>
+  ✕
+  <span id="js-window-height"></span>
+</div>
+
+<div class="container">
+  <form id="js-total-price">
+    <div class="form-group">
+      <label for="quantity">Nom du produit</label>
+      <input type="text" id="js-product" class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label for="quantity">Quantité</label>
+      <input type="number" id="js-quantity" class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label for="price">Prix</label>
+      <input type="number" id="js-price" class="form-control">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Calculer le prix total</button>
+  </form>
+
+  <div class="alert alert-primary mt-3" id="js-price-result" style="display: none"></div>
+</div>
+
+<canvas width="400" height="600" id="js-canvas"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
